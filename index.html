@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Fusion</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="loja.js"></script>
+</head>
+<body class="cor-de-fundo">
+    <header class="cabecalho">
+        <h1>Fashion Fusion</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="#contatos">Contato</a></li>
+            <div id="barra-pesquisa"> 
+                <form action="/search" method="get">
+                    <input type="text" name="q" id="barra-pesquisa" placeholder="Pesquisar...">  
+                    <button type="submit" id="pesquisa-botao">Buscar</button>
+                </form>             
+            </div>
+        </ul>
+    </nav>
+    <main>
+        <div id="imagem-head" class="content">
+            <img id="imagem" src="./imagens/capa do site 0.2.png" alt="mulher com blazer preto">
+        </div>
+        <div class="flex-container">
+            <div>
+                <img src="./imagens/1.png" alt="Vestido longo" class="flex-container-div-img">
+                <h3 class="title">Vestido longo</h3><br>
+                <span class="price">R$ 100,00</span>
+                <button class="botao-comprar">Comprar</button>
+            </div>
+            <div>
+                <img src="./imagens/2.png" alt="Macacão longo" class="flex-container-div-img">
+                <h3 class="title">Macacão longo</h3><br>
+                <span class="price">R$ 150,00</span>
+                <button class="botao-comprar">Comprar</button>
+            </div>
+            <div>
+                <img src="./imagens/3.png" alt="Blazer preto" class="flex-container-div-img">
+                <h3 class="title">Blazer preto</h3><br>
+                <span class="price">R$ 200,00</span>
+                <button class="botao-comprar">Comprar</button>
+            </div>
+            <div>
+                <img src="./imagens/4.png" alt="Calça jeans" class="flex-container-div-img">
+                <h3 class="title">Calça jeans</h3><br>
+                <span class="price">R$ 140,00</span>
+                <button class="botao-comprar">Comprar</button>
+            </div>
+            <div>
+                <img src="./imagens/5.png" alt="Óculos de sol gatinho" class="flex-container-div-img">
+                <h3 class="title">Óculos de sol gatinho</h3><br>
+                <span class="price">R$ 90,00</span>
+                <button class="botao-comprar">Comprar</button>
+            </div>
+            <div>
+                <img src="./imagens/6.png" alt="Conjunto feminino" class="flex-container-div-img">
+                <h3 class="title">Conjunto feminino</h3><br>
+                <span class="price">R$ 208,00</span>
+                <button class="botao-comprar">Comprar</button>
+            </div>
+        </div>
+        <div class="carrinho-compras">
+            <h2>Carrinho de Compras</h2>
+            <table class="teste"><!-- é usado para definir a tabela -->
+                <thead>
+                    <tr><!-- usado para definir uma linha na tabela -->
+                        <th>Produto</th><!-- usado para definir cabeçalhos de coluna -->
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr class="Produto">
+                    <td><img src="/imagens/1.png" alt="Vestido longo" class="flex-container-div-img"></td><!-- usado para definir células de dados na tabela--> 
+                    <td><h3 class="title">Vestido longo</h3></td>
+                    <td><input type="number" value="1" class="Quantidade"></td>
+                    <td><span class="price">R$100,00</span></td>
+                    <td><button class="remover-compra">Remover</button></td>
+                </tr>
+                <tr class="Produto">
+                    <td><img src="/imagens/2.png" alt="Macacão longo" class="flex-container-div-img"></td>
+                    <td><h3 class="title">Macacão longo</h3></td>
+                    <td><input type="number" value="1" class="Quantidade"></td>
+                    <td><span class="price">R$150,00</span></td>
+                    <td><button class="remover-compra">Remover</button></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="total">
+                            <strong>Total</strong>
+                            <span>R$28,99</span>
+                        </td>
+                    </tr>
+                </tfoot> 
+            </table>
+            <div>
+                <button class="finalizar-compra" >Finalizar compra</button>
+            </div>
+        </div>
+    </main>
+    <footer id="contatos"  class="contato">
+        <p>@FashionFusion <br><br>
+           85992742819 <br><br>
+           fashionfusion@gmail.com
+        </p>
+    </footer>
+</body>
+</html>
